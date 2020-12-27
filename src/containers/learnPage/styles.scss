@@ -1,0 +1,72 @@
+.profile-page{
+    margin-top: 85px;
+    .profile-nav{
+        background-color: orange;
+        border-radius: 5px;
+        .profile-avatar{
+            width: 100%;
+            height: 330px;
+            padding: 20px;
+            border-bottom: 1px solid white;
+            margin-bottom: 20px;
+            .avatar{
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+            .user-name{
+                text-align: center;
+                span{
+                    font-family: Montserrat;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: black;
+                }
+            }
+        }
+        .list-tast{
+            width: 100%;
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .list-tast-item{
+                padding: 20px;
+                width: 100%;
+                background-color: white;
+                margin-bottom: 10px;
+                font-family: Montserrat;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: black;
+                border-radius: 5px;
+                &.list-tast-item-active{
+                    background-color: black;
+                    color: orange;
+                }
+                &:hover{
+                    background-color: black;
+                    color: orange;
+                }
+                &:focus{
+                    background-color: black;
+                    color: orange;
+                }
+                i{
+                    font-size: 20px;
+                    width: 30px;
+                    color: orange;
+                }
+            }
+        }
+    }
+}

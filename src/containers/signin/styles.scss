@@ -1,0 +1,182 @@
+.container-config {
+  // background-color: #e6e3e3;
+  max-width: 100%;
+  height: 100%;
+  .row-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .col-config{
+      padding: 20px;
+      background-color: orange;
+      border-radius: 10px;
+      padding-bottom: 85px;
+      .img-config {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+      }
+      .form-btn-config {
+        height: 46px;
+        width: 100%;
+        border-radius: 6px;
+        color: #fff !important;
+        background-color: #3c96f8;
+        border: none;
+      }
+    }
+  }
+}
+.forgot-config {
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-family: Montserrat;
+}
+.forgot-config:active {
+  outline: none;
+}
+
+.input-config {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 46px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+button[disabled] {
+  border: none;
+  background-color: #3c96f8;
+  color: #fff;
+  font-size: 16px;
+}
+.text-form {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.label-config-white {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.label-config-black {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.forgot-config {
+  color: white;
+}
+.forgot-config:hover {
+  color: rgb(111, 145, 125);
+}
+.remember-config {
+  color: #fff;
+  font-size: 14px;
+}
+.checkbox-config {
+  display: flex;
+}
+.checkbox-item {
+  font-size: 16px;
+}
+.text-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.text-signup-config {
+  color: #fff;
+}
+.link-signup-config {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.link-signup-config:hover {
+  color: rgb(111, 145, 125);
+}
+.label-white {
+  color: #fff;
+}
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #fff;
+  background: #e6e3e3;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "\2713\0020";
+  position: absolute;
+  top: 0.15em;
+  left: 0.22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #09ad7e;
+  transition: all 0.2s;
+  font-family: "Lucida Sans Unicode", "Arial Unicode MS", Arial;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.form-eye {
+  position: relative;
+}
+.div-eye {
+  position: absolute;
+  right: 2%;
+  top: 45%;
+}
+.signin-eye{
+  .div-eye {
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .input-config {
+    height: 36px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-height: 620px) {
+  .row-config {
+    height: auto;
+  }
+}

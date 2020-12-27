@@ -1,0 +1,123 @@
+.product-detail{
+    margin-top: 85px;
+    background-color: white;
+    .product-detail-content{
+        overflow-y: auto;
+        height: 85vh;
+        .list-image{
+            padding: 20px;
+            border: 1px solid orange;
+            .list-image-carousel{
+                .list-item{
+                    width: 100%;
+                    height: 400px;
+                    .img-product{
+                        height: 400px;
+                        text-align: -webkit-center;
+                        background-color: #80808057;
+                        img{
+                            height: 100%;
+                            width: auto;
+                            background-image: none;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+        .content-post{
+            padding: 20px;
+            .content-item{
+                margin: 20px 0;
+                border-bottom: 1px solid grey;
+                padding: 10px 0;
+            }
+            i{
+                font-size: 20px;
+                color: orange;
+                width: 30px;           }
+            .post-title{
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #383a4a;
+            }
+            .product-price{
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: red;
+            }
+        }
+    }
+    .product-detail-connection{
+        padding: 20px;
+        padding-right: 35px;
+        .footer-post {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            .save-post{
+                i{
+                    color: grey;
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+                &.save-color{
+                    i{
+                        color: yellow;
+                    }
+                }
+            }
+            &>.ratting {
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #383a4a;
+                margin-right: 30px;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    background-color: rgb(207, 216, 243);
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                &>b {
+                    margin-right: 5px;
+                }
+                .fa-heart {
+                    font-size: 21px;
+                    color: #a9aaad;
+                    margin-right: 5px;
+                }
+                .fa-heart-color {
+                    font-size: 21px;
+                    color: red;
+                    margin-right: 5px;
+                }
+                .icon-comment {
+                    font-size: 21px;
+                    color: #a9aaad;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.save-color{
+    i{
+        color: yellow;
+    }
+}

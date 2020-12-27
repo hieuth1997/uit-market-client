@@ -1,0 +1,2 @@
+export const IS_GET_PROFILE = "IS_GET_PROFILE";
+export const IS_NOT_GET_PROFILE = "IS_NOT_GET_PROFILE";

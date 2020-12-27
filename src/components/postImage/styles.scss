@@ -1,0 +1,29 @@
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    .btn {
+      font-weight: bold;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+    .input-img-config {
+        margin: 0;
+        padding: 0;
+    }
+    .label-btn-file{
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: black;
+    }
+    input[type=file] {
+      position: absolute;
+      left: 0;
+      top: 35px;
+      opacity: 0;
+    }
+}

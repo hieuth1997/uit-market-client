@@ -1,0 +1,35 @@
+.modal-change-profile{
+    .modal-content{
+        background: #fff;
+        margin-top: 80px;
+        .form-submit-config{
+            .modal-header{
+                text-align: center;
+                font-weight: bold;
+            }
+            .modal-body{
+                .show-grid{
+                    margin-bottom: 10px;
+                }
+                .label-config-white{
+                    color: grey;
+                    &.male-config{
+                        margin-right: 10px;
+                    }
+                }
+                .select-search{
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.modal-input-config{
+    width: 100%;
+    border: 1px solid grey;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+}

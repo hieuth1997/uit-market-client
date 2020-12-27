@@ -1,0 +1,146 @@
+.section {
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding: 15px 20px;
+}
+
+.section .section-title {
+	font-size: 12px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #f9f9f9;
+	text-transform: uppercase;
+}
+
+.section .section-title a {
+	float: right;
+	color: #36b662;
+	text-transform: none;
+}
+
+.section .section-title a:before,
+.section .section-title a:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.loading-ask{
+    text-align: center;
+}
+.img-loading-ask{
+	width: 50px;
+	margin-top: 20px;
+}
+
+@media (max-width: 770px) {
+	.section.section-connection .item-connection .item-connection-content {
+		display: inline;
+	}
+}
+ 
+.form-search {
+	margin-bottom: 10px;
+	form {
+		width: 100%;
+		height: 40px;
+		position: relative;
+		display: table;
+		color: #a9aaad;
+		.form-button-search {
+			position: absolute;
+			color: black;
+			z-index: 1;
+			height: 40px;
+			background: #fff;
+			border: none;
+			padding-left: 10px;
+			&:hover {
+				background: #36b662;
+			}
+
+			.icon-search {
+				font-size: 24px;
+				vertical-align: middle;
+			}
+		}
+		.form-input-search {
+			position: absolute;
+			padding-left: 44px;
+			width: 100%;
+			height: 40px;
+			border: none;
+		}
+	}
+}
+
+.select-search{
+	width: 100%;
+	margin-bottom: 10px;
+	select{
+		width: 100%;
+		height: 40px;
+		border: none;
+		padding: 0 10px;
+	}
+	&.select-50{
+		width: 50%;
+	}
+}
+
+.group-filter{
+	display: flex;
+	.category{
+		margin-right: 10px;
+	}
+}
+
+.suggest-login{
+	width: 200px;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.5;
+	color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	.suggest{
+		padding: 5px;
+		margin: 10px 0;
+		text-align: center;
+		font-family: Montserrat;
+		text-transform: uppercase;
+		font-weight: bold;
+		line-height: 1.5;
+		color: black;
+		background-color: white;
+		border-radius: 5px;
+		.suggest-title{
+			padding: 10px 0;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		.suggest-btnlogin{
+			padding: 10px 0;
+			width: 100%;
+			background-color: white;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-bottom: 10px;
+			background-color: rgb(82, 79, 243);
+			&:hover{
+				background-color: black;
+				color: orange;
+			}
+		}
+		.suggest-signup{
+			text-decoration: underline;
+			cursor: pointer;
+			margin-bottom: 10px;
+			padding: 10px 0;
+			&:hover{
+				color: darkblue;
+			}
+		}
+	}
+}
